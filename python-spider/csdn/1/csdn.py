@@ -26,9 +26,11 @@ with open('blogdizhi.txt', 'r',) as f2:
         pag += 1
         if pag % 2 == 0:
             ads = line.strip()
-            blog_ads.append(ads)
+            #blog_ads.append(ads)
         else:
             ads = line.strip()
+
+        blog_ads.append(ads)
 
 headers = {
     'Host': 'blog.csdn.net',
